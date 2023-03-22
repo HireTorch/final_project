@@ -57,7 +57,7 @@ public class CandidateController {
 	
 	
 	@PostMapping("save")
-	@CrossOrigin(origins = "http://localhost:3002")
+	@CrossOrigin(origins = "http://localhost:3000")
 	public ResponseEntity<Object> saveCandidate (@RequestBody CandidateDto candidateDto)
 	{  
 		try {
@@ -99,7 +99,7 @@ public class CandidateController {
 	
 	
 	@PostMapping("login")
-	@CrossOrigin(origins = "http://localhost:3002")
+	@CrossOrigin(origins = "http://localhost:3000")
 	public ResponseEntity<?> loginCandidate(@RequestBody LoginDto loginDto)
 	{
 		LoginMessage loginMessage = candidateService.loginCandidate(loginDto);
